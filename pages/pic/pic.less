@@ -1,0 +1,201 @@
+.head_container{
+
+    width: 750rpx;
+
+    .block{
+
+        margin: 30rpx 30rpx 60rpx 30rpx;
+        flex-direction: column;
+
+        .head{
+
+            position: absolute;
+
+            .head_list{
+
+                width: 60rpx;
+                height: 60rpx;
+                margin: 40rpx;
+
+            }
+    
+            .Color{
+    
+                font-size: 80rpx;
+                margin: 60rpx 10rpx -15rpx 30rpx;
+                color: white;
+                font-family: "Arial Rounded MT";
+                font-weight: bold;
+
+            }
+    
+            .sfc{
+    
+                font-size: 40rpx;
+                margin: 0 0 0 30rpx;
+                color: white;
+                font-family: "Calibri",sans-serif;
+
+            }
+        }
+
+        .background{
+
+            width: 100%;
+            height: 500rpx;
+            border-radius: 30rpx;
+            box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+            
+        }
+       
+    }
+}
+
+.list_container{
+
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .itemcontainer{
+
+        width: 690rpx;
+        box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+        margin-bottom: 50rpx;
+        // overflow: hidden;
+        border-radius: 30rpx;
+        position: relative;
+
+        .imagecontainer{
+
+            position: relative;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // background-color: #121212;
+
+            image{
+                width: 690rpx;
+                // height: calc(690 * 178.583 /360 rpx);
+                // opacity: 0.5;
+                border-radius: 30rpx;
+                // box-shadow: 15rpx 15rpx 20rpx rgba(0, 0, 0, 0.05);
+
+            }
+            .imagetitle{
+                font-size: 40rpx;
+                line-height: 60rpx;
+                padding: 0 20rpx;
+                color: rgba(0, 0, 0, 0.5);
+                margin: 20rpx 0;
+         
+            }
+        }
+
+        .detailcontainer{
+
+            width: 690rpx;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 450.26rpx;
+            border-radius: 30rpx;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 40rpx;
+            line-height: 40rpx;
+            padding-top: 50rpx;
+
+            .detailbar{
+                
+                display: flex;
+                margin-top: 30rpx;
+                color: white;
+                align-items: center;
+                
+                .barcontainer{
+
+                    width: 400rpx;
+                    height: 30rpx;
+                    border-radius: 15rpx;
+                    background-color: rgba(178, 178, 178, 0.5);
+                    margin-left: 10rpx;
+                }
+            }
+
+            .lang{
+
+                margin: 50rpx 0 20rpx 0;
+                height: 50rpx;
+                width: 150rpx;
+                border-radius: 25rpx;
+                background-color: #242424;
+                color: white;
+                text-align: center;
+                font-size: 30rpx;
+                line-height: 50rpx;
+                
+
+            }
+
+            .tags{
+                font-size: 25rpx;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+    
+}
+
+.changeType{
+
+    position: absolute;
+    top: 470rpx;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .changeTypecontainer{
+
+        width: 400rpx;
+        background-color: white;
+        display: flex;
+        box-shadow: 5rpx 5rpx 20rpx 10rpx rgba(0, 0, 0, 0.05);
+        border-radius: 25rpx;
+        letter-spacing: 5px;
+        align-items: center;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.5);
+
+        .typetitle{
+
+            width: 400rpx;
+            height: 90rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .typeList{
+
+            height: 270rpx;
+            width: 400rpx;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+
+            p{
+                line-height: 90rpx;
+            }
+        }
+    }
+}
+
+
+

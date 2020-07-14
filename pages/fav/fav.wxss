@@ -1,0 +1,184 @@
+.head_container .block {
+  margin: 30rpx 30rpx 20rpx 30rpx;
+  flex-direction: column;
+  position: relative;
+}
+.head_container .block .head_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 40rpx;
+}
+.head_container .block .head_logo {
+  height: 200rpx;
+  width: 220rpx;
+  position: absolute;
+  right: 0;
+  margin: 40rpx;
+}
+.head_container .block .head_text {
+  position: absolute;
+  bottom: 0;
+}
+.head_container .block .head_text .favorite {
+  font-size: 80rpx;
+  margin: 60rpx 10rpx -15rpx 40rpx;
+  color: #707070;
+  font-family: "Arial Rounded MT";
+  font-weight: bold;
+}
+.head_container .block .head_text .sfc {
+  font-size: 40rpx;
+  margin: 0 0 40rpx 40rpx;
+  color: #707070;
+  font-family: "Calibri", sans-serif;
+}
+.head_container .block .backgroud {
+  width: 100%;
+  height: 500rpx;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+}
+.switch_bar {
+  margin: 0 30rpx;
+  padding: 0 0 0 40rpx;
+  position: relative;
+  align-items: center;
+  display: flex;
+  box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+  padding: 30rpx;
+  border-radius: 30rpx;
+}
+.switch_bar .switch_text {
+  color: #707070;
+  font-weight: bold;
+  font-family: "Calibri", sans-serif;
+  align-items: center;
+  font-size: 32rpx;
+}
+.switch_bar .switch_container {
+  display: flex;
+  position: absolute;
+  right: 130rpx;
+  align-items: center;
+}
+.switch_bar .switch_container .switch_botton {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 15rpx;
+  background-color: #dedede;
+  position: absolute;
+  margin-left: 4rpx;
+  margin-right: 4rpx;
+}
+.switch_bar .switch_container .switch_line {
+  width: 90rpx;
+  height: 40rpx;
+  border-radius: 30rpx;
+  background-color: #707070;
+  position: absolute;
+  opacity: 0.5;
+}
+.both_container {
+  display: flex;
+}
+.both_container .color_container .title_container {
+  margin: 30rpx 0 0 0;
+}
+.both_container .color_container .title_container .list_title {
+  font-size: 120rpx;
+  color: #53abea;
+  font-family: "Arial Rounded MT";
+  font-weight: bold;
+  text-align: center;
+}
+.both_container .color_container .title_container .fav_bar_bottom {
+  height: 20rpx;
+  border-radius: 10rpx;
+  background-color: #333;
+  margin: 0 300rpx 0 300rpx;
+  opacity: 0.2;
+}
+.both_container .color_container .fav_container {
+  width: 750rpx;
+}
+.both_container .color_container .fav_container .fav_list {
+  margin: 30rpx;
+  display: flex;
+  align-content: right;
+  justify-content: flex-end;
+  position: relative;
+  height: 100rpx;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.15);
+  background-color: #fafafa;
+  padding: 0 10rpx 0 0;
+}
+.both_container .color_container .fav_container .fav_list .list_name {
+  position: absolute;
+  left: 0;
+  align-self: center;
+  margin: 0 0 0 30rpx;
+  font-family: "Calibri", sans-serif;
+  color: #2c1654;
+  font-weight: bold;
+  font-size: 50rpx;
+}
+.both_container .color_container .fav_container .fav_list .color {
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 15rpx;
+  align-self: center;
+  margin: 0 20rpx 0 0;
+}
+.both_container .grad_container .title_container {
+  margin: 30rpx 0 0 0;
+}
+.both_container .grad_container .title_container .list_title {
+  font-size: 120rpx;
+  color: #fac468;
+  font-family: "Arial Rounded MT";
+  font-weight: bold;
+  text-align: center;
+}
+.both_container .grad_container .title_container .fav_bar_bottom {
+  height: 20rpx;
+  border-radius: 10rpx;
+  background-color: #333;
+  margin: 0 300rpx 0 300rpx;
+  opacity: 0.2;
+}
+.both_container .grad_container .fav_container {
+  width: 750rpx;
+}
+.both_container .grad_container .fav_container .fav_list {
+  margin: 30rpx;
+  display: flex;
+  align-content: right;
+  justify-content: flex-end;
+  position: relative;
+  height: 100rpx;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.15);
+  background-color: #fafafa;
+  padding: 0 10rpx 0 0;
+}
+.both_container .grad_container .fav_container .fav_list .list_name {
+  position: absolute;
+  left: 0;
+  align-self: center;
+  margin: 0 0 0 30rpx;
+  font-family: "Calibri", sans-serif;
+  color: #2c1654;
+  font-weight: bold;
+  font-size: 50rpx;
+}
+.both_container .grad_container .fav_container .fav_list .grad {
+  height: 30rpx;
+  width: 220rpx;
+  border-radius: 15rpx;
+  align-self: center;
+  margin: 0 20rpx 0 0;
+}

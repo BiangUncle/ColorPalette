@@ -1,0 +1,6 @@
+<!-- <list style="display:flex;" animation="{{animationData}}"></list> -->
+<!-- <detail id="handleChangeColor" isColor="{{isColor}}"></detail> -->
+<!-- <bb id="bButtom"></bb> -->
+<search id="searchBar"></search>
+<view class="black_test" bindtap=""></view>
+

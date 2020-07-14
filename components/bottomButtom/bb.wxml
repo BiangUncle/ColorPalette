@@ -1,0 +1,11 @@
+<view class="shade" bindtouchend="closeList" hidden="{{popUp}}"></view>
+
+<view class="buttonContainer" animation="{{moveAnimation}}">
+
+  <view class="listContainer" bindtap="openList" animation="{{showAnimation}}">
+    <image wx:if="{{isOpen}}" src="/images/add.png"></image>
+    <image wx:if="{{!isOpen}}" src="/images/list_fav.png" bindtap="showList"></image>
+    <image wx:if="{{!isOpen}}" src="/images/up.png" bindtap="toTop"></image>
+  </view>
+
+</view>

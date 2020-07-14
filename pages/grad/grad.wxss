@@ -1,0 +1,89 @@
+page {
+  background-color: #333;
+}
+.head_container .block {
+  margin: 30rpx 30rpx 60rpx 30rpx;
+}
+.head_container .block .head {
+  position: absolute;
+}
+.head_container .block .head .head_list {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 40rpx;
+}
+.head_container .block .head .color {
+  font-size: 80rpx;
+  margin: 60rpx 10rpx -15rpx 30rpx;
+  color: white;
+  font-family: "Arial Rounded MT";
+  font-weight: bold;
+}
+.head_container .block .head .sfc {
+  font-size: 40rpx;
+  margin: 0 0 0 30rpx;
+  color: white;
+  font-family: "Calibri", sans-serif;
+}
+.head_container .block .background {
+  width: 100%;
+  height: 500rpx;
+  border-radius: 30rpx;
+}
+.list_container {
+  margin-bottom: 30rpx;
+}
+.list_container .list_title {
+  margin: 0 37.5rpx 0 37.5rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list_container .list_title .list_font {
+  color: white;
+  font-size: 60rpx;
+}
+.list_container .list_title .list_icon {
+  float: right;
+  height: 60rpx;
+  width: 60rpx;
+}
+.list_container .colorGroup_container {
+  margin: 40rpx 40rpx 0 40rpx;
+  overflow: scroll;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  height: 120rpx;
+}
+.list_container .colorGroup_container ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.list_container .colorGroup_container .grad {
+  height: 120rpx;
+  width: 80%;
+  border-radius: 60rpx;
+}
+.showMoreList {
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+  justify-content: flex-end;
+}
+.showMoreList .showMoreListButton {
+  display: flex;
+  margin: 30rpx;
+  width: 30%;
+  height: 90rpx;
+  border: 1rpx solid white;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.05);
+  font-size: 40rpx;
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}

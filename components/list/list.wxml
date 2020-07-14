@@ -1,0 +1,27 @@
+<!-- 遮罩 -->
+<view class="shade" hidden="{{popUp}}" bindtouchend="switchPop"></view>
+
+<!-- list菜单 -->
+<view class="comp_list_container" animation="{{showListAnimation}}">
+
+  <navigator url="/pages/index/index" open-type="redirect">
+    <image mode='widthFix' src="/images/color.png" class="color"></image>
+    Color
+  </navigator>
+
+  <navigator url="/pages/grad/grad" open-type="redirect">
+    <image mode='widthFix' src="/images/gradient.png"></image>
+    Grad
+  </navigator>
+
+  <navigator url="/pages/pic/pic" open-type="redirect">
+    <image mode='widthFix' src="/images/website.png" class="website"></image>
+    Web
+  </navigator>
+
+  <navigator url="/pages/fav/fav" open-type="redirect">
+    <image mode='widthFix' src="/images/fav.png"></image>
+    Fav
+  </navigator>
+
+</view>

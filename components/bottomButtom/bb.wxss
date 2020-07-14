@@ -1,0 +1,33 @@
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: -100rpx;
+  z-index: 5;
+}
+.buttonContainer .listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45rpx;
+  background-color: #fff;
+  box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+  width: 90rpx;
+  height: 90rpx;
+}
+.buttonContainer .listContainer image {
+  padding: 20rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 4;
+  opacity: 0;
+}

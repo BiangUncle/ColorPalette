@@ -1,0 +1,31 @@
+<!-- 遮罩 -->
+<view class="shade" hidden="{{popUp}}" bindtouchend="switchPop"></view>
+
+<!-- 搜索栏 -->
+<view class='search_container' animation="{{searchAnimation}}">
+  <input class='search_input' bindtap="handleInput" animation="{{searchInputAnimation}}" value="{{inputValue}}" bindinput="changeContent" focus="{{focus}}">
+    <!-- if you want to input, delete the readonly tag and add 'changeContent' int bidinput-->
+    <image class='search_icon' src='/images/sear2ch.png'></image>
+    <image class="search_close" src="/images/close.png" hidden="{{popUp}}" bindtap="switchPop"></image>
+  </input>
+
+  <view class="searchItem_container">
+    <view class="search_item" wx:for="{{searchItem}}" wx:key="index" bindtap="showDetail" data-color="{{item}}">
+
+      <image class="icon" wx:if="{{isWeb}}" src="{{item.logo}}"></image>
+      
+      <view class="search_name">{{item.name}}</view>
+
+      <view class="color_container" wx:if="{{isColor}}">
+        <view class="color" wx:for="{{item.colorList}}" style="background-color:#{{item}}" wx:key="index" wx:if="{{!isWeb}}"></view>
+        <image src="/images/copy.png" wx:if="{{isWeb}}" bindtap="copyinfo" data-url="{{item.url}}" class="copy"></image>
+      </view>
+
+      <view class="color_container" wx:else>
+        <view class="grad" style="background-image: linear-gradient(90deg,#{{item.gradList[0]}},#{{item.gradList[1]}})"></view>
+      </view>
+      
+    </view>
+  </view>
+</view>
+

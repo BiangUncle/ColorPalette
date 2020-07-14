@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "detail":"../../components/detail/detail",
+    "list":"../../components/list/list",
+    "search":"../../components/search/search",
+    "bb": "../../components/bottomButtom/bb"
+  },
+  "navigationBarBackgroundColor": "#333",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "Gradient",
+  "enablePullDownRefresh": false
+}

@@ -1,0 +1,41 @@
+<!-- 在position absolute中，组件越靠下，在屏幕上位置越靠上，除非你设置z-index 一个absolute就占一个z-index-->
+<!-- 组件：详细页 -->
+<detail id="handleChangeColor" isColor="{{isColor}}"></detail>
+
+<!-- 组件顶部列表 -->
+<list id="handleShowList"></list>
+
+<!-- 搜索栏组件 -->
+<search id="searchBar" bind:showDetail="showSearchDetail" isColor="{{isColor}}"></search>
+
+<!-- 底部按钮 -->
+<bb id="bButtom" bind:showList="showList" bind:toTop="toTop"></bb>
+
+<!-- 主页 -->
+<view class='head_container'>
+
+  <view class='block' >
+    <view class='head'>
+      <image class='head_list' src='/images/list.png' bindtap="showList"></image>
+      <view class='Color'>Color</view>
+      <view class='sfc'>Search For Combination</view>
+    </view>
+    <image class='background' src='/images/backgroudindex.jpg'></image>
+  </view>
+  
+</view>
+
+<!-- 列表 -->
+<view class="list_container" wx:for="{{colors}}" wx:key="index">
+  <view class='list_title'>
+    <text class='list_font'>{{item.name}}</text>
+    <image class='list_icon' src='/images/more.png' bindtap="showDetail" data-color="{{item}}"></image>
+  </view>
+  <view class='colorGroup_container'>
+    <view class='colorGroup' wx:for="{{item.colorList}}" style='background-color:#{{item}}' wx:key="index"></view>
+  </view>
+</view> 
+<view class="showMoreList">
+    <view class="showMoreListButton" bindtap="showMore">MORE</view>
+</view>
+

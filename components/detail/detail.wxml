@@ -1,0 +1,60 @@
+<!-- 遮罩 -->
+<view class="shade" hidden="{{popUp}}" bindtap="switchPop"></view>
+
+<!-- 详细页主页面 -->
+<view class="detail_container" animation="{{showDetailAnimation}}">
+
+  <!-- 标题 -->
+  <view class="detail_title_container">
+    <block wx:if="{{isColor}}">{{colorDetail.name}}</block>
+    <block wx:else>{{gradDetail.name}}</block>
+    <image src="/images/fav_{{isFav?'o':'f'}}.png" bindtap="addToFav"></image>
+  </view>
+
+  <!-- 分割线 -->
+  <view class="detail_spliter"></view>
+
+  <!-- 颜色显示区 -->
+  <view class="detail_color_container" wx:if="{{isColor}}">
+
+    <view class="detail_color_container_left">
+      <view class="color_detail" wx:for="{{colorDetail.colorList}}" wx:key="index" data-color="{{item}}" bindtap="colorCopyToClipBoard">
+        <view class="color_detail_view" style="background-color:#{{item}};"></view>
+        {{item}}
+      </view>
+    </view>
+
+    <view class="logo_container_right">
+      <image src="/images/longLogo.png" mode="widthFix"></image>
+    </view>
+
+    
+  </view>
+
+  <!-- logo显示区 -->
+  <view wx:else class="detail_grad_container">
+    <view class="detail_grad_container_left">
+      <view class="grad_detail_circle" style='background-image: linear-gradient(90deg,#{{gradDetail.gradList[0]}},#{{gradDetail.gradList[1]}})' mode="widthFix" bindtap="gradCopyToClipBoard"></view>
+      <view class="grad_detail_text">
+        <text>{{gradDetail.gradList[0]}}</text>
+        <text>{{gradDetail.gradList[1]}}</text>
+      </view>
+    </view>
+    <view class="logo_container_right">
+      <image src="/images/longLogo.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="tags_container">
+    <view class="tags" wx:for="{{tags}}" wx:key="index">{{item}}</view>
+    <image src="../../images/add.png" bindtap="addtag"></image>
+    
+  </view>
+  <!-- 提示 -->
+  <view class="detail_tips" wx:if="{{!addtag}}">Tap color to copy</view>
+  <view class="addtag" wx:else>
+    <input placeholder="text your tag here" bindinput="changeContent" value="{{inputValue}}">
+      <image src="../../images/ok.png" bindtap="addtag"></image>
+    </input>
+  </view>
+</view>

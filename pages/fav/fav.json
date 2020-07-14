@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "list":"../../components/list/list",
+    "detail":"../../components/detail/detail",
+    "bb": "../../components/bottomButtom/bb"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "Favorite",
+  "enablePullDownRefresh": true
+}

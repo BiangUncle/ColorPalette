@@ -1,0 +1,82 @@
+<!-- 组件：详细页 -->
+<!-- <detail id="handleChangeColor" isColor="{{isColor}}"></detail> -->
+
+<!-- 组件顶部列表 -->
+<list id="handleShowList"></list>
+
+<!-- 搜索栏组件 -->
+<!-- <search isWeb="{{isWeb}}" id="searchBar"></search> -->
+
+<bb id="bButtom" bind:showList="showList" bind:toTop="toTop"></bb>
+
+<!-- 主页 -->
+<view class='head_container'>
+
+  <view class='block' >
+
+    <view class='head'>
+      <image class='head_list' src='/images/list.png' bindtap="showList"></image>
+      <view class='Color'>Recommend</view>
+      <view class='sfc'>Waggle waggle waggle</view>
+    </view>
+    <image class='background' src='/images/backgroudpic.jpg'></image>
+  </view>
+  
+</view>
+
+<view class="changeType">
+  
+  <view class="changeTypecontainer" bindtap="showtype" style="height: {{change?'270rpx':'90rpx'}};">
+    <view class="typetitle" wx:if="{{!change}}">{{type}}</view>
+    <view class="typeList" wx:else>
+      <p bindtap="choosetype" data-type='0' data-name="图标设计">图标设计</p>
+      <p bindtap="choosetype" data-type='1' data-name="创意灵感">创意灵感</p>
+      <p bindtap="choosetype" data-type='2' data-name="图片素材">图片素材</p>
+      <p bindtap="choosetype" data-type='3' data-name="插画素材">插画素材</p>
+      <p bindtap="choosetype" data-type='4' data-name="设计工具">设计工具</p>
+      <p bindtap="choosetype" data-type='5' data-name="设计文章">设计文章</p>
+      <p bindtap="choosetype" data-type='6' data-name="配色方案">配色方案</p>
+      <p bindtap="choosetype" data-type='7' data-name="字体字型">字体字型</p>
+      <p bindtap="choosetype" data-type='8' data-name="模板素材">模板素材</p>
+      <p bindtap="choosetype" data-type='9' data-name="前端开发">前端开发</p>
+      <p bindtap="choosetype" data-type='10' data-name="设计规范">设计规范</p>
+    </view>
+  </view>
+  
+</view>
+
+<!-- WEB列表 -->
+<view class="list_container">
+
+  <view class="itemcontainer" wx:for="{{web}}" wx:key="index" wx:for-index="idx" bindtap="showdetail" data-index="{{idx}}" >
+    <view class="imagecontainer">
+      <image src="{{item.img}}" mode="widthFix"></image>
+      <view class="imagetitle" style="opacity:{{item.isshow?0:1}}">{{item.name}}</view>
+    </view>
+    <view class="detailcontainer"  wx:if="{{item.isshow}}">
+      <view class="detailbar">
+        <view>连接速度:</view>
+        <view class="barcontainer">
+          <view class="bar" style="width:{{item.connspeed}}%;background-color:#58b1e0;height:100%;border-radius: 15rpx;"></view>
+        </view>
+      </view>
+      <view class="detailbar">
+        <view>资源数量:</view>
+        <view class="barcontainer">
+          <view class="bar" style="width:{{item.resou}}%;background-color:#a0f1b2;height:100%;border-radius: 15rpx;"></view>
+        </view>
+      </view>
+      <view class="detailbar">
+        <view>消费成都:</view>
+        <view class="barcontainer">
+          <view class="bar" style="width:{{item.cost}}%;background-color:#f5553f;height:100%;border-radius: 15rpx;"></view>
+        </view>
+      </view>
+      <view class="lang">{{item.lang==0?'中文':'英文'}}</view>
+      <view class="tags">标签：{{item.tags}}</view>
+      <image src="/images/copy.png" catchtap="copyurl" class='copybutton'></image>
+    </view>
+  </view>
+
+</view>
+

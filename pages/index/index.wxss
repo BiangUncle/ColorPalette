@@ -1,0 +1,91 @@
+.head_container {
+  width: 750rpx;
+}
+.head_container .block {
+  margin: 30rpx 30rpx 60rpx 30rpx;
+  flex-direction: column;
+}
+.head_container .block .head {
+  position: absolute;
+}
+.head_container .block .head .head_list {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 40rpx;
+}
+.head_container .block .head .Color {
+  font-size: 80rpx;
+  margin: 60rpx 10rpx -15rpx 30rpx;
+  color: white;
+  font-family: "Arial Rounded MT";
+  font-weight: bold;
+}
+.head_container .block .head .sfc {
+  font-size: 40rpx;
+  margin: 0 0 0 30rpx;
+  color: white;
+  font-family: "Calibri", sans-serif;
+}
+.head_container .block .background {
+  width: 100%;
+  height: 500rpx;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+}
+.list_container {
+  background-color: #fefefe;
+  margin: 30rpx 30rpx 0 30rpx;
+  box-shadow: 15rpx 15rpx 20rpx 5rpx rgba(92, 92, 92, 0.15);
+  border-radius: 30rpx;
+}
+.list_container .list_title {
+  display: flex;
+  margin: 0 37.5rpx 0 37.5rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_container .list_title .list_font {
+  font-size: 60rpx;
+  color: #2c1654;
+}
+.list_container .list_title .list_icon {
+  float: right;
+  height: 50rpx;
+  width: 50rpx;
+}
+.list_container .colorGroup_container {
+  margin: 40rpx 40rpx 0 40rpx;
+  overflow: scroll;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  height: 300rpx;
+}
+.list_container .colorGroup_container .colorGroup {
+  flex-direction: row;
+  height: 90%;
+  width: 100rpx;
+  border-radius: 50rpx;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.05);
+}
+.showMoreList {
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+  justify-content: flex-end;
+}
+.showMoreList .showMoreListButton {
+  display: flex;
+  margin: 30rpx;
+  width: 30%;
+  height: 90rpx;
+  background-color: white;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.05);
+  font-size: 40rpx;
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+  color: #2c1654;
+  justify-content: center;
+  align-items: center;
+}

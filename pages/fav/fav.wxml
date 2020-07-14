@@ -1,0 +1,90 @@
+<!-- 组件顶部列表 -->
+<list id="handleShowList"></list>
+
+<!-- 详细页 -->
+<detail id="handleChangeColor" isColor="{{isColor}}"></detail>
+
+<!-- 底部按钮 -->
+<bb id="bButtom" bind:showList="showList" bind:toTop="toTop"></bb>
+
+<!-- 上面名片 -->
+<view class='head_container'>
+
+  <view class='block' >
+
+    <!-- 列表 -->
+    <image class='head_list' src='/images/list_fav.png' bindtap="showList"></image>
+
+    <image class="head_logo" src="/images/shortLogo.png"></image>
+
+    <view class="head_text" animation="{{titleAnimation}}">
+      <view class='favorite' style="color:#{{isColor?'53abea':'fac468'}};">Favorite</view>
+      <view class='sfc' style="color:#{{isColor?'53abea':'fac468'}};">Believing you will forget</view>
+    </view>
+    <image class='backgroud' src='/images/backgroudfav.jpg'></image>
+  </view>
+
+</view>
+
+<!-- 列表改变 -->
+<!-- color:#{{isColor?'53abea':'fac468'}}; -->
+<view class="switch_bar">
+  <view class="switch_container" bindtap="switchList">
+    <view class="switch_line" style="background-color:#{{isColor?'53abea;':'fac468;'}}"></view>
+    <view class="switch_botton" animation="{{buttonAnimation}}"></view>
+  </view>
+  <view class="switch_text">SWITCH TO {{isColor?'GRADIENT':'COLOR'}}-LIST</view>
+</view>
+
+<!-- 分割线 -->
+<!-- <view class="fav_bar"></view> -->
+
+<!-- 收藏列表 -->
+<view class="both_container" animation="{{listAnimation}}"  bindtouchstart="touchstart" bindtouchend="touchend">
+
+  <!-- 单色容器 -->
+  <view class="color_container">
+
+    <!-- 列表容器 -->
+    <view class="title_container">
+      <!-- 列表标题 -->
+      <view class="list_title">Color</view>
+
+      <!-- 强调 -->
+      <view class="fav_bar_bottom"></view>
+    </view>
+
+    <!-- 单色列表 -->
+    <view class="fav_container">
+      <view class="fav_list" wx:for="{{colors}}" wx:key="index" wx:for-item="item1" bindtap="showDetail" data-color="{{item1}}">
+        <view class="list_name">{{item1.name}}</view>
+        <view class="color" wx:for="{{item1.colorList}}" wx:key="index" style="background-color:#{{item}};"></view>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 渐变容器 -->
+  <view class="grad_container">
+  
+    <!-- 列表容器 -->
+    <view class="title_container">
+      <!-- 列表标题 -->
+      <view class="list_title">Grdient</view>
+
+      <!-- 强调 -->
+      <view class="fav_bar_bottom"></view>
+    </view>
+    
+    <!-- 渐变列表 -->
+    <view class="fav_container">
+      <view class="fav_list" wx:for="{{gradlist}}" wx:key="index" wx:for-item="item1" bindtap="showDetail" data-color="{{item1}}">
+        <view class="list_name">{{item1.name}}</view>
+        <view class="grad" style='background-image: linear-gradient(90deg,#{{item1.gradList[0]}},#{{item1.gradList[1]}})'></view>
+      </view>
+    </view>
+  
+  </view>
+  
+</view>
+  

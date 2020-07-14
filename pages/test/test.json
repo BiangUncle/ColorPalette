@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "list": "../../components/list/list",
+    "detail": "../../components/detail/detail",
+    "search": "../../components/search/search",
+    "bb":"../../components/bottomButtom/bb"
+  }
+}

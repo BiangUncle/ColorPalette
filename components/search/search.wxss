@@ -1,0 +1,90 @@
+.search_container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 470rpx;
+  align-content: center;
+  justify-content: center;
+  z-index: 5;
+  flex-wrap: wrap;
+}
+.search_container .search_input {
+  position: relative;
+  display: flex;
+  background-color: white;
+  width: 70%;
+  height: 90rpx;
+  border-radius: 25rpx;
+  box-shadow: 5rpx 5rpx 20rpx 10rpx rgba(0, 0, 0, 0.05);
+  padding: 0 0 0 100rpx;
+}
+.search_container .search_icon {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  left: 0;
+  margin: 18rpx;
+}
+.search_container .search_close {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  right: 0;
+  margin: 18rpx;
+  opacity: 0.5;
+}
+.search_container .searchItem_container .search_item {
+  display: flex;
+  margin: 30rpx;
+  background-color: #ffffff;
+  height: 90rpx;
+  border-radius: 45rpx;
+  width: 690rpx;
+  justify-content: space-between;
+  padding: 0 10rpx;
+  align-items: center;
+}
+.search_container .searchItem_container .search_item .icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0  0 0 15rpx;
+  border-radius: 30rpx;
+}
+.search_container .searchItem_container .search_item .search_name {
+  margin: 0 0 0 20rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-weight: bold;
+  color: #2c1654;
+}
+.search_container .searchItem_container .search_item .color_container {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+.search_container .searchItem_container .search_item .color_container .color {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  margin: 0 10rpx;
+}
+.search_container .searchItem_container .search_item .color_container .grad {
+  height: 30rpx;
+  border-radius: 25rpx;
+  margin: 0 20rpx;
+  width: 200rpx;
+}
+.search_container .searchItem_container .search_item .color_container .copy {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 20rpx 0 0;
+}
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 4;
+}

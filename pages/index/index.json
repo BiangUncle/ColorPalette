@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "search":"../../components/search/search",
+    "list":"../../components/list/list",
+    "detail":"../../components/detail/detail",
+    "bb": "../../components/bottomButtom/bb"
+  },
+  "navigationBarTitleText": "Color Tree",
+  "enablePullDownRefresh": false
+}

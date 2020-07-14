@@ -1,0 +1,152 @@
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+.detail_container {
+  position: fixed;
+  z-index: 11;
+  width: 600rpx;
+  height: 900rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin: 250rpx 75rpx;
+  padding: 40rpx;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.05);
+  right: 750rpx;
+}
+.detail_container .detail_title_container {
+  font-size: 60rpx;
+  font-family: "Calibri", sans-serif;
+  line-height: 50rpx;
+  color: #2c1654;
+  font-weight: bold;
+}
+.detail_container .detail_title_container image {
+  float: right;
+  height: 50rpx;
+  width: 50rpx;
+}
+.detail_container .detail_spliter {
+  height: 8rpx;
+  width: 100%;
+  border-radius: 4rpx;
+  background-color: #333;
+  margin: 30rpx 0;
+  opacity: 0.5;
+}
+.detail_container .detail_color_container {
+  display: flex;
+  height: 550rpx;
+}
+.detail_container .detail_color_container .detail_color_container_left {
+  flex: 5;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.detail_container .detail_color_container .detail_color_container_left .color_detail {
+  margin: 30rpx 0;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #2c1654;
+}
+.detail_container .detail_color_container .detail_color_container_left .color_detail .color_detail_view {
+  border-radius: 20rpx;
+  height: 100%;
+  width: 90rpx;
+  margin: 0 30rpx 0 0;
+  box-shadow: 15rpx 15rpx 10rpx 5rpx rgba(92, 92, 92, 0.15);
+}
+.detail_container .detail_color_container .logo_container_right {
+  padding: 30rpx 0 30rpx 60rpx;
+  flex: 2;
+}
+.detail_container .detail_color_container .logo_container_right image {
+  width: 100%;
+}
+.detail_container .detail_grad_container {
+  display: flex;
+  height: 550rpx;
+}
+.detail_container .detail_grad_container .detail_grad_container_left {
+  flex: 5;
+  padding: 40rpx 0;
+}
+.detail_container .detail_grad_container .detail_grad_container_left .grad_detail_circle {
+  width: 100%;
+  border-radius: 50%;
+  padding-bottom: 100%;
+}
+.detail_container .detail_grad_container .detail_grad_container_left .grad_detail_text {
+  margin: 40rpx 0;
+  display: flex;
+}
+.detail_container .detail_grad_container .detail_grad_container_left .grad_detail_text text {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c1654;
+  font-weight: bold;
+}
+.detail_container .detail_grad_container .logo_container_right {
+  padding: 30rpx 0 30rpx 60rpx;
+  flex: 2;
+}
+.detail_container .detail_grad_container .logo_container_right image {
+  width: 100%;
+}
+.detail_container .tags_container {
+  margin: 30rpx 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+.detail_container .tags_container .tags {
+  display: inline-block;
+  padding: 0 5rpx;
+  margin: 5rpx 10rpx;
+  width: 100rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 40rpx;
+  text-align: center;
+}
+.detail_container .tags_container image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 10rpx;
+}
+.detail_container .detail_tips {
+  text-align: center;
+  font-size: 30rpx;
+  opacity: 0.5;
+}
+.detail_container .addtag {
+  width: 90%;
+  opacity: 0.5;
+  position: relative;
+  padding: 0 10rpx;
+}
+.detail_container .addtag input {
+  display: flex;
+}
+.detail_container .addtag input image {
+  position: absolute;
+  right: 0;
+  width: 40rpx;
+  height: 40rpx;
+}
